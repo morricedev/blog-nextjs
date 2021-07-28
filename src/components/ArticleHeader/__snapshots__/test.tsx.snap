@@ -33,7 +33,7 @@ exports[
 .c2 {
   color: #000000;
   line-height: 1.2;
-  font-size: 6.4rem;
+  font-size: 4.0rem;
   text-transform: none;
 }
 
@@ -57,12 +57,6 @@ exports[
   max-width: 100%;
   display: block;
   margin-bottom: 2.4rem;
-}
-
-@media (max-width:768px) {
-  .c2 {
-    font-size: 4.0rem;
-  }
 }
 
 <div>

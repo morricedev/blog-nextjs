@@ -20,7 +20,7 @@ export const ArticleHeader = ({
 }: ArticleHeaderProps) => {
   return (
     <Styled.Wrapper>
-      <Heading size="huge">{title}</Heading>
+      <Heading size="big">{title}</Heading>
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
       <Styled.Cover src={cover.url} alt={cover.alternativeText} />
       <ArticleMeta
