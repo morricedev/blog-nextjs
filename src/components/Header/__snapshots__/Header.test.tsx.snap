@@ -5,6 +5,7 @@ Object {
   "asFragment": [Function],
   "baseElement": .c2 {
   color: #000000;
+  line-height: 1.2;
   font-size: 2.4rem;
   text-transform: uppercase;
 }
@@ -81,7 +82,7 @@ Object {
       class="sc-dlnjwi iZVkHM"
     >
       <h1
-        class="sc-bdnxRM zxTof"
+        class="sc-bdnxRM htrKD"
       >
         <a
           class="sc-gtsrHT cNievg"
