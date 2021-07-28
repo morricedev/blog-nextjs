@@ -27,13 +27,18 @@
     },
     "posts": [
       {
+        "createdAt": "2020-04-20",
         "id": "60ff1257d1710462936198dc",
         "slug": "como-utilizar-um-estado-dentro-do-use-effect",
         "title": "Como utilizar um estado dentro do useEffect",
         "excerpt": "Aprenda a melhor maneira de utilizar um estado dentro do useEffect sem criar loops ou afetar o desempenho da aplicação.",
         "content": "<p>Aqui vem a explicação que vou fazer depois</p>",
         "allowComents": true,
-        "cover": null,
+        "cover": {
+          "id": "603e59da85540677309fd518",
+          "alternativeText": "",
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+        },
         "categories": [
           {
             "id": "60ff2854900eec746a264a2f",
