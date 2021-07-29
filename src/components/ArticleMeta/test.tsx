@@ -33,6 +33,19 @@ describe('<ArticleMeta />', () => {
     );
   });
 
+  it('should render with no author and no categories', () => {
+    renderTheme(
+      <ArticleMeta {...props} author={undefined} categories={undefined} />,
+    );
+
+    expect(
+      screen.queryByRole('link', { name: mock.author.displayName }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('link', { name: mock.categories[0].displayName }),
+    ).not.toBeInTheDocument();
+  });
+
   it('should match snapshot', () => {
     const { container } = renderTheme(<ArticleMeta {...props} />);
 
