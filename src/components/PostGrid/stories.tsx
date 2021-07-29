@@ -15,3 +15,11 @@ export const Template: Story<PostGridProps> = (args) => {
     </div>
   );
 };
+
+export const NoPosts: Story<PostGridProps> = () => {
+  return (
+    <div>
+      <PostGrid posts={undefined} />
+    </div>
+  );
+};
