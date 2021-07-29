@@ -71,7 +71,48 @@
         "excerpt": "Aprenda de forma descomplicada a utilizar os React Hooks!",
         "content": "<p>Aqui eu explico depois …</p>",
         "allowComents": true,
-        "cover": null,
+        "cover": {
+          "id": "603e59da85540677309fd518",
+          "alternativeText": "",
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+        },
+        "categories": [
+          {
+            "id": "60ff2854900eec746a264a2f",
+            "displayName": "React",
+            "slug": "react"
+          }
+        ],
+        "tags": [
+          {
+            "id": "60ff11b1d1710462936198da",
+            "displayName": "useState",
+            "slug": "use-state"
+          },
+          {
+            "id": "60ff11c3d1710462936198db",
+            "displayName": "useEffect",
+            "slug": "use-effect"
+          }
+        ],
+        "author": {
+          "id": "60ff1127d1710462936198d6",
+          "displayName": "Morrice Sousa",
+          "slug": "morrice-sousa"
+        }
+      },
+      {
+        "id": "60ff12add1710462936198dd2",
+        "slug": "como-utilizar-hooks-do-react2",
+        "title": "Como utilizar hooks do React2",
+        "excerpt": "Aprenda de forma descomplicada a utilizar os React Hooks2!",
+        "content": "<p>Aqui eu explico depois2 …</p>",
+        "allowComents": true,
+        "cover": {
+          "id": "603e59da85540677309fd5182",
+          "alternativeText": "",
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+        },
         "categories": [
           {
             "id": "60ff2854900eec746a264a2f",
