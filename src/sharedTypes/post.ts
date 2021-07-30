@@ -1,5 +1,7 @@
-export type Post = {
-  id: string;
-  title: string;
-  excerpt: string;
+import { PostProps } from '../components/Post';
+import { PostTag } from './tag';
+
+export type PostStrapi = PostProps & {
+  tags: PostTag[];
+  slug: string;
 };
