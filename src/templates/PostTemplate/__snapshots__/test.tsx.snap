@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostTemplate /> should match snapshot 1`] = `
+.c22 {
+  padding: 0 3.2rem;
+  padding-top: 1.6rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c19 {
+  font-size: 1.6rem;
+  color: #AAAAAA;
+  font-style: italic;
+}
+
+.c19 .categories span::after {
+  content: ', ';
+}
+
+.c19 .categories span:last-child::after {
+  content: '';
+}
+
+.c19 a {
+  color: #dc143c;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c19 a:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.c6 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c12 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c16 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 4.0rem;
+  text-transform: none;
+}
+
+.c15 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c15 .c5 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c17 {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.c18 {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.c21 {
+  font-size: calc(1.6rem + 0.2rem);
+  line-height: 1.5;
+}
+
+.c21 p {
+  margin: 2.4rem 0;
+}
+
+.c21 a,
+.c21 a:visited,
+.c21 a:link {
+  color: #dc143c;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c21 a:hover,
+.c21 a:visited:hover,
+.c21 a:link:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.c21 code {
+  font-family: monospace;
+  color: #dc143c;
+  font-size: 1.6rem;
+  background-color: #DDDDDD;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.c21 pre {
+  background: #000000;
+  padding: 2.4rem;
+  font-family: monospace;
+  color: #FFFFFF;
+  margin: 2.4rem 0;
+  font-size: 1.6rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.c21 pre code {
+  background: inherit;
+  color: inherit;
+}
+
+.c21 img {
+  max-width: 100%;
+}
+
+.c21 .image {
+  background: #DDDDDD;
+  line-height: 0;
+  margin: 2.4rem 0;
+}
+
+.c21 .image figcaption {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.c21 .image-style-side {
+  max-width: 50%;
+  float: right;
+  margin: 2.4rem;
+}
+
+.c21 hr {
+  border: none;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c21 ul,
+.c21 ol {
+  margin: 2.4rem 4.0rem;
+}
+
+.c21 .table {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.c21 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.4rem;
+}
+
+.c21 table td,
+.c21 table th {
+  padding: 1.6rem;
+  border: 0.1rem solid #DDDDDD;
+}
+
+.c21 blockquote {
+  border-left: 0.5rem solid #dc143c;
+  color: #AAAAAA;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  padding-left: 2.4rem;
+  font-style: italic;
+  margin: 2.4rem;
+}
+
+.c14 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 96rem;
+  padding: 0 3.2rem;
+}
+
+.c20 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 3.2rem;
+}
+
+.c23 {
+  margin: 2.4rem 0;
+}
+
+.c23 span {
+  margin: 0 0 0 0.5rem;
+}
+
+.c23 span::after {
+  content: ', ';
+}
+
+.c23 span:last-child::after {
+  content: '';
+}
+
+.c23 a {
+  color: #dc143c;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c23 a:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.c25 {
+  text-align: center;
+  border-top: 0.1rem solid #DDDDDD;
+}
+
+.c25 a {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c26 {
+  position: fixed;
+  background: #000000;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c7 > img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333333;
+  font-size: 1.6rem;
+}
+
+.c10 .c5 {
+  margin: 0 0 calc(1.6rem - 1rem);
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+.c8 {
+  display: block;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  border-right: 0.5rem solid #000000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c8:hover {
+  border-right: 0.5rem solid #dc143c;
+  color: #dc143c;
+}
+
+.c2 {
+  background: #000000;
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+  left: -30rem;
+  overflow-y: hidden;
+}
+
+.c3 {
+  margin: auto;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 4.8rem;
+}
+
+.c4 .c5 img {
+  border: 0.3rem solid #dc143c;
+}
+
+.c0 {
+  position: fixed;
+  top: 2.4rem;
+  color: #FFFFFF;
+  background: #000000;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  left: 26rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  left: 1rem;
+  color: #FFFFFF;
+}
+
+.c9 {
+  margin-top: 6.4rem;
+}
+
+.c13 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.c24 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+@media (max-width:768px) {
+  .c21 {
+    font-size: 2rem;
+  }
+
+  .c21 .image-style-side {
+    max-width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    left: -32rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    left: 1rem;
+  }
+}
+
+<div>
+  <div
+    class=""
+  >
+    <a
+      aria-label="Open or close menu"
+      class="c0"
+      href="#"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </a>
+    <div
+      aria-hidden="true"
+      class="c2"
+    >
+      <nav
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <h1
+            class="c5 c6"
+          >
+            <a
+              class="c7"
+              href="/"
+              target="_self"
+            >
+              <img
+                alt="MorriceDev"
+                src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+              />
+            </a>
+          </h1>
+        </div>
+        <a
+          class="c8"
+          href="#"
+          target="_self"
+        >
+          Teste
+        </a>
+        <a
+          class="c8"
+          href="#teste2"
+          target="_self"
+        >
+          Teste2
+        </a>
+      </nav>
+    </div>
+    <div
+      class="c9"
+    >
+      <header
+        class="c10"
+      >
+        <h1
+          class="c5 c6"
+        >
+          <a
+            class="c7"
+            href="/"
+            target="_self"
+          >
+            <img
+              alt="MorriceDev - Blog"
+              src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+            />
+          </a>
+        </h1>
+        <div
+          class="c11"
+        >
+          <h2
+            class="c5 c12"
+          >
+            MorriceDev
+          </h2>
+          <p>
+            alguma coisa
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="c13"
+    >
+      <article
+        class=""
+      >
+        <div
+          class="c14"
+        >
+          <header
+            class="c15"
+          >
+            <h1
+              class="c5 c16"
+            >
+              Como utilizar um estado dentro do useEffect
+            </h1>
+            <p
+              class="c17"
+            >
+              Aprenda a melhor maneira de utilizar um estado dentro do useEffect sem criar loops ou afetar o desempenho da aplicação.
+            </p>
+            <img
+              alt=""
+              class="c18"
+              src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+            />
+            <div
+              class="c19"
+            >
+              <p>
+                <span>
+                  Por 
+                </span>
+                <a
+                  href="/author/morrice-sousa"
+                >
+                  Morrice Sousa
+                </a>
+                <span
+                  class="separator"
+                >
+                   | 
+                </span>
+                <time
+                  datetime="2020-04-20"
+                >
+                  19 de abr. de 2020
+                </time>
+                <span
+                  class="separator"
+                >
+                   | 
+                </span>
+                <span
+                  class="categories"
+                >
+                  <span>
+                    <a
+                      href="/category/react"
+                    >
+                      React
+                    </a>
+                  </span>
+                </span>
+              </p>
+            </div>
+          </header>
+        </div>
+        <div
+          class="c20"
+        >
+          <div
+            class="c21"
+          >
+            <p>
+              Aqui vem a explicação que vou fazer depois
+            </p>
+          </div>
+        </div>
+      </article>
+      <div
+        class="c22"
+      >
+        <p
+          class="c23"
+        >
+          tags:
+          <span>
+            <a
+              href="/tag/use-state"
+            >
+              useState
+            </a>
+          </span>
+          <span>
+            <a
+              href="/tag/use-effect"
+            >
+              useEffect
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="c24"
+    >
+      <footer
+        class="c25"
+      >
+        <div
+          class="c21"
+        >
+          <p>
+            Um footer qualquer aqui
+          </p>
+        </div>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="c26"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
