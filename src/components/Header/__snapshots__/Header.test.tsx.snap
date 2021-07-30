@@ -55,6 +55,18 @@ Object {
   margin: 0 0 calc(1.6rem - 1rem);
 }
 
+@media (max-width:360px) {
+  .c0 {
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c0 > .c1 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
 <body>
     <div>
       <header
@@ -79,7 +91,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-dlnjwi iZVkHM"
+      class="sc-dlnjwi bDQZOL"
     >
       <h1
         class="sc-bdnxRM htrKD"

@@ -374,6 +374,24 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   }
 }
 
+@media (max-width:360px) {
+  .c10 {
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c10 > .c5 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width:360px) {
+  .c11 {
+    margin-left: 0;
+  }
+}
+
 @media (max-width:768px) {
   .c2 {
     left: -32rem;
@@ -434,7 +452,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
             >
               <img
                 alt="MorriceDev"
-                src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+                src="/assets/images/teste.jpg"
               />
             </a>
           </h1>
@@ -471,7 +489,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
           >
             <img
               alt="MorriceDev - Blog"
-              src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+              src="/assets/images/teste.jpg"
             />
           </a>
         </h1>
@@ -978,6 +996,24 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
   }
 }
 
+@media (max-width:360px) {
+  .c10 {
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c10 > .c5 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width:360px) {
+  .c11 {
+    margin-left: 0;
+  }
+}
+
 @media (max-width:768px) {
   .c2 {
     left: -32rem;
@@ -1038,7 +1074,7 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
             >
               <img
                 alt="MorriceDev"
-                src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+                src="/assets/images/teste.jpg"
               />
             </a>
           </h1>
@@ -1075,7 +1111,7 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
           >
             <img
               alt="MorriceDev - Blog"
-              src="https://res.cloudinary.com/drelbihcj/image/upload/v1627325450/authentication_ed0ef1cfc9.svg"
+              src="/assets/images/teste.jpg"
             />
           </a>
         </h1>
