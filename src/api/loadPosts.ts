@@ -18,19 +18,20 @@ export type LoadPostsVariables = {
 export type StrapiData = {
   posts: PostStrapi[];
   setting: SettingsStrapi;
+  variables?: LoadPostsVariables;
+};
+
+export const defaultLoadPostsVariables: LoadPostsVariables = {
+  sort: 'createdAt:desc',
+  start: 0,
+  limit: 6,
 };
 
 export const loadPosts = async (
   viariables: LoadPostsVariables = {},
 ): Promise<StrapiData> => {
-  const defaultVariables: LoadPostsVariables = {
-    sort: 'createdAt:desc',
-    start: 0,
-    limit: 10,
-  };
-
   const data = await request(config.graphqlURL, GRAPHQL_QUERY, {
-    ...defaultVariables,
+    ...defaultLoadPostsVariables,
     ...viariables,
   });
 
