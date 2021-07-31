@@ -25,6 +25,7 @@ export const Cover = styled.img`
   ${({ theme }) => css`
     max-width: 100%;
     display: block;
+    margin: 0 auto;
     margin-bottom: ${theme.spacings.medium};
   `}
 `;

@@ -75,6 +75,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 .c18 {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
   margin-bottom: 2.4rem;
 }
 
@@ -407,6 +408,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 
 .c9 {
   margin-top: 6.4rem;
+  padding: 0 3.2rem;
 }
 
 .c13 {
