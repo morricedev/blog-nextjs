@@ -7,7 +7,9 @@ const props: MenuProps = mock;
 
 describe('<Menu />', () => {
   it('should render menu button ', () => {
-    renderTheme(<Menu {...props} links={undefined} />);
+    renderTheme(
+      <Menu {...props} links={undefined} postMenuLinks={undefined} />,
+    );
 
     const buttonLink = screen.getByRole('link', { name: 'Open or close menu' });
     const openMenu = screen.getByLabelText('Open menu');
@@ -39,7 +41,7 @@ describe('<Menu />', () => {
 
     expect(
       screen.getByRole('navigation').querySelectorAll('a:not([href="/"])'),
-    ).toHaveLength(mock.links.length);
+    ).toHaveLength(mock.links.length + mock.postMenuLinks.length);
     //#endregion
 
     fireEvent.click(buttonLink);

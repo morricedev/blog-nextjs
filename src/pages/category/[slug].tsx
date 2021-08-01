@@ -7,6 +7,7 @@ import {
   loadPosts,
   StrapiData,
 } from '../../api/loadPosts';
+import { Loading } from '../../templates/Loading';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
 export default function CategoryPage({
@@ -16,7 +17,7 @@ export default function CategoryPage({
 }: StrapiData) {
   const router = useRouter();
 
-  if (router.isFallback) return <h1>Carregando ...</h1>;
+  if (router.isFallback) return <Loading />;
 
   const categoryName = posts[0].categories.filter(
     (category) => category.slug === router.query.slug,

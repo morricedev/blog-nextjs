@@ -71,4 +71,12 @@ export default {
   ],
   blogName: 'Maurício Sousa',
   logo: '/assets/images/teste.jpg',
+  postMenuLinks: [
+    {
+      id: 'link-1',
+      link: '/home/1',
+      newTab: false,
+      text: 'My jobs',
+    },
+  ],
 } as MenuProps;
