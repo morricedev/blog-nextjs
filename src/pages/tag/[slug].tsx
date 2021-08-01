@@ -7,12 +7,13 @@ import {
   loadPosts,
   StrapiData,
 } from '../../api/loadPosts';
+import { Loading } from '../../templates/Loading';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
 export default function TagPage({ posts, setting, variables }: StrapiData) {
   const router = useRouter();
 
-  if (router.isFallback) return <h1>Carregando ...</h1>;
+  if (router.isFallback) return <Loading />;
 
   const tagName = posts[0].tags.filter(
     (tag) => tag.slug === router.query.slug,

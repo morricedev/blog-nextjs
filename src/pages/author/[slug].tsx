@@ -8,11 +8,12 @@ import {
   StrapiData,
 } from '../../api/loadPosts';
 import { PostsTemplate } from '../../templates/PostsTemplate';
+import { Loading } from '../../templates/Loading';
 
 export default function AuthorPage({ posts, setting, variables }: StrapiData) {
   const router = useRouter();
 
-  if (router.isFallback) return <h1>Carregando ...</h1>;
+  if (router.isFallback) return <Loading />;
 
   return (
     <>
