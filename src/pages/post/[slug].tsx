@@ -64,6 +64,6 @@ export const getStaticProps: GetStaticProps<StrapiData> = async (ctx) => {
       posts: data.posts,
       setting: data.setting,
     },
-    revalidate: 24 * 60 * 60,
+    revalidate: 86400,
   };
 };
