@@ -51,16 +51,16 @@ describe('<HtmlContent />', () => {
         font-family: monospace;
         color: #dc143c;
         font-size: 1.6rem;
-        background-color: #DDDDDD;
+        background-color: #eee;
         padding: 0.2rem;
         margin: 0.2rem;
       }
 
       .c0 pre {
-        background: #000000;
+        background: #181a1b;
         padding: 2.4rem;
         font-family: monospace;
-        color: #FFFFFF;
+        color: white;
         margin: 2.4rem 0;
         font-size: 1.6rem;
         width: 100%;
@@ -80,6 +80,7 @@ describe('<HtmlContent />', () => {
         background: #DDDDDD;
         line-height: 0;
         margin: 2.4rem 0;
+        color: black;
       }
 
       .c0 .image figcaption {

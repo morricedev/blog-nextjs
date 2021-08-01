@@ -25,16 +25,16 @@ export const Container = styled.div`
       font-family: monospace;
       color: ${theme.colors.secondary};
       font-size: ${theme.font.sizes.small};
-      background-color: ${theme.colors.mediumGray};
+      background-color: #eee;
       padding: 0.2rem;
       margin: 0.2rem;
     }
 
     pre {
-      background: ${theme.colors.primary};
+      background: #181a1b;
       padding: ${theme.spacings.medium};
       font-family: monospace;
-      color: ${theme.colors.white};
+      color: white;
       margin: ${theme.spacings.medium} 0;
       font-size: ${theme.font.sizes.small};
       width: 100%;
@@ -54,6 +54,7 @@ export const Container = styled.div`
       background: ${theme.colors.mediumGray};
       line-height: 0;
       margin: ${theme.spacings.medium} 0;
+      color: black;
 
       figcaption {
         font-size: ${theme.font.sizes.small};
