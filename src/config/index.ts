@@ -1,3 +1,3 @@
 export default {
-  graphqlURL: 'http://localhost:1337/graphql',
+  graphqlURL: 'https://strapi-blog-morrice.herokuapp.com/graphql',
 };
