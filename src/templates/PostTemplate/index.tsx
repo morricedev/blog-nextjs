@@ -5,6 +5,7 @@ import { PostTags } from '../../components/PostTags';
 import { PostStrapi } from '../../sharedTypes/post';
 import { SettingsStrapi } from '../../sharedTypes/settings';
 import { BaseTemplate } from '../Base';
+import { Comments } from '../../components/Comments';
 
 export type PostTemplateProps = {
   settings: SettingsStrapi;
@@ -18,6 +19,13 @@ export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
       <Styled.TagsContainer>
         <PostTags tags={post.tags} />
       </Styled.TagsContainer>
+
+      <Comments
+        title={post.title}
+        slug={post.slug}
+        id={post.id}
+        allowComments={post.allowComents}
+      />
     </BaseTemplate>
   );
 };
