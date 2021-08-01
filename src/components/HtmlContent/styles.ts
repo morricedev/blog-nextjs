@@ -21,31 +21,6 @@ export const Container = styled.div`
       }
     }
 
-    code {
-      font-family: monospace;
-      color: ${theme.colors.secondary};
-      font-size: ${theme.font.sizes.small};
-      background-color: #eee;
-      padding: 0.2rem;
-      margin: 0.2rem;
-    }
-
-    pre {
-      background: #181a1b;
-      padding: ${theme.spacings.medium};
-      font-family: monospace;
-      color: white;
-      margin: ${theme.spacings.medium} 0;
-      font-size: ${theme.font.sizes.small};
-      width: 100%;
-      overflow-x: auto;
-
-      code {
-        background: inherit;
-        color: inherit;
-      }
-    }
-
     img {
       max-width: 100%;
     }
