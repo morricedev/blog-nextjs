@@ -1,9 +1,12 @@
+import { Cancel } from '@styled-icons/material-outlined/Cancel';
+import { CheckCircleOutline } from '@styled-icons/material-outlined/CheckCircleOutline';
+
 import * as Styled from './styles';
 import { PostGrid } from '../../components/PostGrid';
 import { PostStrapi } from '../../sharedTypes/post';
 import { SettingsStrapi } from '../../sharedTypes/settings';
 import { BaseTemplate } from '../Base';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { loadPosts, LoadPostsVariables } from '../../api/loadPosts';
 import { useRouter } from 'next/dist/client/router';
 
@@ -18,12 +21,59 @@ export const PostsTemplate = ({
   posts = [],
   variables,
 }: PostsTemplateProps) => {
+  //#region search
   const router = useRouter();
+  const [searchValue, setSearchValue] = useState(router?.query?.q || '');
+  const [searchDisabled, setSearchDisabled] = useState(true);
+  const [isReady, setIsReady] = useState(true);
+  const inputTimeout = useRef(null);
 
+  useEffect(() => {
+    if (isReady) {
+      setSearchDisabled(false);
+    } else {
+      setSearchDisabled(true);
+    }
+  }, [isReady]);
+
+  useEffect(() => {
+    clearTimeout(inputTimeout.current);
+
+    if (router?.query?.q === searchValue) {
+      return;
+    }
+
+    const q = searchValue;
+
+    if (!q || q.length < 3) return;
+
+    inputTimeout.current = setTimeout(() => {
+      setIsReady(false);
+      router
+        .push({
+          pathname: '/search/',
+          query: { q },
+        })
+        .then(() => setIsReady(true));
+    }, 600);
+
+    return () => clearTimeout(inputTimeout.current);
+  }, [searchValue, router]);
+  //#endregion
+
+  //#region posts
   const [statePosts, setStatePosts] = useState(posts);
   const [stateVariables, setStateVariables] = useState(variables);
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [noMorePosts, setNoMorePosts] = useState(false);
+
+  useEffect(() => {
+    setStatePosts(posts);
+    setNoMorePosts(false);
+    setButtonDisabled(false);
+    setStateVariables(variables);
+  }, [posts, variables]);
+  //#endregion
 
   const handleLoadMorePosts = async () => {
     setButtonDisabled(true);
@@ -48,14 +98,22 @@ export const PostsTemplate = ({
   return (
     <BaseTemplate settings={settings}>
       <Styled.SearchContainer>
-        <form action="/search" method="GET">
-          <Styled.SearchInput
-            type="search"
-            placeholder="Encontre posts"
-            name="q"
-            defaultValue={router?.query.q}
+        <Styled.SearchInput
+          type="search"
+          placeholder="Encontre posts"
+          name="q"
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+          disabled={searchDisabled}
+        />
+        {searchDisabled ? (
+          <Cancel className="search-cancel-icon" aria-label="Input disabled" />
+        ) : (
+          <CheckCircleOutline
+            className="search-ok-icon"
+            aria-label="Input enabled"
           />
-        </form>
+        )}
       </Styled.SearchContainer>
 
       <PostGrid posts={statePosts} />

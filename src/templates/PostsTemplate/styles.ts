@@ -25,6 +25,10 @@ export const SearchContainer = styled.div`
 export const SearchInput = styled.input`
   ${({ theme }) => css`
     padding: 0.5rem ${theme.spacings.small};
+
+    &:disabled {
+      outline: 0.1rem solid ${theme.colors.secondary};
+    }
   `}
 `;
 

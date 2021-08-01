@@ -1,6 +1,20 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  svg.search-ok-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+  }
+  svg.search-cancel-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+    ${({ theme }) => css`
+      color: ${theme.colors.secondary};
+    `}
+  }
+`;
 
 export const HeaderContainer = styled.div`
   ${({ theme }) => css`
