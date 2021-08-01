@@ -16,9 +16,15 @@ export type MenuProps = {
   links: MenuPropsLinks[];
   blogName: string;
   logo: string;
+  postMenuLinks?: MenuPropsLinks[];
 };
 
-export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
+export const Menu = ({
+  links = [],
+  blogName,
+  logo,
+  postMenuLinks = [],
+}: MenuProps) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleToggleMenu = (event: React.MouseEvent) => {
@@ -52,6 +58,17 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
               {link.text}
             </MenuLink>
           ))}
+
+          {postMenuLinks.length > 0 && (
+            <>
+              <hr />
+              {postMenuLinks.map((link) => (
+                <MenuLink key={link.id} link={link.link} newTab={link.newTab}>
+                  {link.text}
+                </MenuLink>
+              ))}
+            </>
+          )}
         </Styled.Nav>
       </Styled.Wrapper>
     </>

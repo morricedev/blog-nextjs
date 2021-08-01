@@ -77,6 +77,10 @@ exports[`<Menu /> should match snapshot 1`] = `
   width: 100%;
 }
 
+.c3 hr {
+  margin-bottom: 1.6rem;
+}
+
 .c4 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -247,6 +251,14 @@ exports[`<Menu /> should match snapshot 1`] = `
         target="_self"
       >
         A menu
+      </a>
+      <hr />
+      <a
+        class="c8"
+        href="/home/1"
+        target="_self"
+      >
+        My jobs
       </a>
     </nav>
   </div>

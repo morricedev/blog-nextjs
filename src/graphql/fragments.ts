@@ -64,6 +64,9 @@ export const GRAPHQL_FRAGMENTS = gql`
     content
     createdAt
     allowComents
+    menuLink {
+      ...menuLink
+    }
     ...cover
     ...categories
     ...tags

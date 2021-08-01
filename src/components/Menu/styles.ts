@@ -36,6 +36,10 @@ export const Wrapper = styled.div<MenuBehaviorProps>`
 export const Nav = styled.nav`
   margin: auto;
   width: 100%;
+
+  hr {
+    margin-bottom: ${({ theme }) => theme.spacings.small};
+  }
 `;
 
 export const Logo = styled.div`

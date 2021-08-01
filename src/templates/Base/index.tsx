@@ -2,7 +2,7 @@ import React from 'react';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
 import { Header } from '../../components/Header';
-import { Menu } from '../../components/Menu';
+import { Menu, MenuPropsLinks } from '../../components/Menu';
 import { ToggleTheme } from '../../components/ToggleTheme';
 import { SettingsStrapi } from '../../sharedTypes/settings';
 import * as Styled from './styles';
@@ -10,9 +10,14 @@ import * as Styled from './styles';
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
   children: React.ReactNode;
+  postMenuLinks?: MenuPropsLinks[];
 };
 
-export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
+export const BaseTemplate = ({
+  settings,
+  children,
+  postMenuLinks,
+}: BaseTemplateProps) => {
   return (
     <Styled.Wrapper>
       <ToggleTheme />
@@ -21,6 +26,7 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
         links={settings.menuLink}
         blogName={settings.blogName}
         logo={settings.logo.url}
+        postMenuLinks={postMenuLinks}
       />
 
       <Styled.HeaderContainer>
