@@ -59,7 +59,7 @@ exports[`<Menu /> should match snapshot 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   max-width: 32rem;
   height: 100vh;
@@ -103,7 +103,7 @@ exports[`<Menu /> should match snapshot 1`] = `
   top: 2.4rem;
   color: #FFFFFF;
   background: #000000;
-  z-index: 2;
+  z-index: 3;
   width: 3rem;
   height: 3rem;
   left: 26rem;

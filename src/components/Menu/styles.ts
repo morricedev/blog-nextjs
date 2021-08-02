@@ -21,7 +21,7 @@ export const Wrapper = styled.div<MenuBehaviorProps>`
     padding: ${theme.spacings.large};
     display: flex;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     max-width: 32rem;
     height: 100vh;
@@ -72,7 +72,7 @@ export const OpenClose = styled.a<MenuBehaviorProps>`
     top: ${theme.spacings.medium};
     color: ${theme.colors.white};
     background: ${theme.colors.primary};
-    z-index: 2;
+    z-index: 3;
     width: 3rem;
     height: 3rem;
     left: 26rem;
