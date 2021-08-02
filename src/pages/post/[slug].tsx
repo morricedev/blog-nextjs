@@ -22,7 +22,7 @@ export default function PostPage({ posts, setting }: StrapiData) {
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"
-          content={`https://blog-nextjs-liart.vercel.app/post/${post.slug}`}
+          content={`https://blog-nextjs-liart.vercel.app/post/${post.slug}/`}
         />
         <meta property="og:image" content={post.cover.url} />
       </Head>
