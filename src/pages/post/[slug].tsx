@@ -18,6 +18,13 @@ export default function PostPage({ posts, setting }: StrapiData) {
       <Head>
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta
+          property="og:url"
+          content={`https://blog-nextjs-liart.vercel.app/post/${post.slug}`}
+        />
+        <meta property="og:image" content={post.cover.url} />
       </Head>
       <PostTemplate post={post} settings={setting} />;
     </>
