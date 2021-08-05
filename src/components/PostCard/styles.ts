@@ -27,7 +27,6 @@ export const Wrapper = styled.div`
 
 export const Cover = styled.img`
   max-width: 100%;
-  height: 20rem;
   transition: opacity 0.3s ease-in-out;
 `;
 
