@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 
     a {
       color: ${theme.colors.secondary};
