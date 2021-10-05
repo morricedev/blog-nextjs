@@ -15,9 +15,9 @@ export const HtmlContent = ({ html }: HtmlContentProps) => {
       Prism.highlightAll();
 
       removeAds = setTimeout(() => {
-        document
-          .querySelectorAll('iframe[src*=ads]')
-          .forEach((el) => el.remove());
+        document.querySelectorAll('div#disqus_thread iframe').forEach((el) => {
+          if (!el.hasAttribute('src')) el.remove();
+        });
       }, 1000);
     }
 
